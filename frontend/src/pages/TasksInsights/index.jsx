@@ -14,7 +14,9 @@ function TasksInsights() {
 
   const fetchInsights = async () => {
     try {
-      const response = await fetch("http://localhost:5000/insights");
+      const response = await fetch(
+        "https://task-tracker-backend-tah7.onrender.com/insights"
+      );
 
       if (!response.ok) throw new Error(response.statusText);
 

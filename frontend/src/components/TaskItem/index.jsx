@@ -22,7 +22,7 @@ function TaskItem({ eachTask, reFetchTaskList }) {
 
   const updateTaskList = async () => {
     try {
-      const url = `http://localhost:5000/tasks/${id}`;
+      const url = `https://task-tracker-backend-tah7.onrender.com/tasks/${id}`;
       const options = {
         method: "PUT",
         headers: {

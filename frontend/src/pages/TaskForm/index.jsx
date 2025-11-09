@@ -31,7 +31,7 @@ function TaskForm() {
 
   const AddTaskToDB = async () => {
     try {
-      const url = "http://localhost:5000/tasks";
+      const url = "https://task-tracker-backend-tah7.onrender.com/tasks";
       const options = {
         method: "POST",
         headers: {

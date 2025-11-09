@@ -36,7 +36,7 @@ function TaskList() {
       }));
 
       const response = await fetch(
-        `http://localhost:5000/tasks?priority=${selected.priority}&status=${selected.status}`
+        `https://task-tracker-backend-tah7.onrender.com/tasks?priority=${selected.priority}&status=${selected.status}`
       );
 
       if (!response.ok) throw new Error(response.statusText);
